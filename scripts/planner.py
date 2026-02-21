@@ -279,26 +279,7 @@ You make deployments boring (in the best way). Your responsibilities:
     }
 }
 
-<<<<<<< HEAD
-def get_gemini_path():
-    # 1. Check env var
-    path = os.environ.get("GEMINI_PATH")
-    if path and os.path.isfile(path) and os.access(path, os.X_OK):
-        return path
-    
-    # 2. Check system PATH for 'gemini'
-    path = shutil.which("gemini")
-    if path:
-        return path
-    
-    # 3. Check system PATH for 'antigravity'
-    path = shutil.which("antigravity")
-    if path:
-        return path
-        
-    return None
-=======
->>>>>>> d56ce9991b1076a985990ff2d46bc7c15a7d2f1f
+
 
 def generate_prompt(mission):
     # Construct the Agent Pool description string
